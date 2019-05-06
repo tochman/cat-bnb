@@ -23,6 +23,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'selenium-webdriver'
   gem 'webdrivers', '~> 3.0'
+  gem 'coveralls', require: false
 end
 
 group :development do
