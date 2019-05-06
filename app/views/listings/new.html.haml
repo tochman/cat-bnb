@@ -7,23 +7,24 @@
     %br/
     = form.text_field :name
   %p
-    = form.label :content
+    = form.label :Location
     %br/
-    = form.text_area :content
+    = form.text_field :location
+  %p
+    = form.label :Description
+    %br/
+    = form.text_area :description  
+  %p
+    = form.label :Availability
+    %br/
+    = form.text_field :availability
+  %p
+    = form.label :Email
+    %br/
+    = form.email_field :email
+  %p
+    = form.label :"Phone number"
+    %br/
+    = form.telephone_field :"phone number"
   %p
     = form.submit
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
