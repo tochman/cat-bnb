@@ -13,3 +13,4 @@ Feature: Host can fill in a listing form
     And I fill in "Phone number" with "07071234567"
     And click "Create listing"
     Then I should not see "listing was created succesfully"
+    
