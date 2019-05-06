@@ -5,8 +5,8 @@ Feature: Visitor can view listing
 
   Background:
     Given the following listings exist
-    | name | location   | description | email        | phone      | availability |
-    | Zane | Gothenburg | I'm nice    | zane@cat.com | 0701234567 | 1-10 may     |
+    | name | location   | description | email        | phone_number | availability |
+    | Zane | Gothenburg | I'm nice    | zane@cat.com | 0701234567   | 1-10 may     |
 
   Scenario:
     When I visit the landing page
