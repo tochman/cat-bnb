@@ -1,6 +1,6 @@
 class ListingsController < ApplicationController
 
-def new
-end
+  def new
+  end
 
 end
