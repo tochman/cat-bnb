@@ -1,6 +1,6 @@
 %h1 Listings#index
 - @listings.each do |listing|
-  #listing{:id=> "#{listing.id}" }
+  .div{id: dom_id(listing)}
     %p= listing.name
     %p= listing.location
     %p= listing.description

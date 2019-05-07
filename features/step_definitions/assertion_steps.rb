@@ -3,8 +3,9 @@ Then("I should see {string}") do |content|
 end
 
 Then("I should see {string} within {string} section") do |content, section|
-  id = (Listing.find_by(name: section)).id
-    within("//div[id=#{id}]") do
-      expect(page).to have_content content
+  name = Listing.find_by(name: section)
+  dom_section = "listing_#{name.id}"
+  within(dom_section) do
+    expect(page).to have_content content
   end
 end
