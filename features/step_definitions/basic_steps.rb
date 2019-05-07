@@ -1,4 +1,4 @@
-Given("I visit the {string} page") do |string|
+Given("I visit the Become a host page") do
   visit new_listing_path
 end
 
