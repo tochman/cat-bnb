@@ -4,7 +4,7 @@ class ListingsController < ApplicationController
   end
 
   def new
-    @listing
+    @listing = Listing.new
   end
 
 end
