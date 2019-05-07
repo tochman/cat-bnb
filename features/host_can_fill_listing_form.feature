@@ -11,7 +11,7 @@ Feature: Host can fill in a listing form
     And I fill in "description" with "Hello, please lend me your cat"
     And I fill in "availability" with "All summer"
     And I fill in "email" with "george@craft.se"
-    And I fill in "phone number" with "07071234567"
+    And I fill in "phone_number" with "07071234567"
     And I should see "Create Listing" button
     Then I should not see "listing was created succesfully"
     
