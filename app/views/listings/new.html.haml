@@ -3,27 +3,27 @@
 
 = form_with model: @listing, local: true do |form|
   %p
-    = form.label :Name
+    = form.label :name
     %br/
     = form.text_field :name
   %p
-    = form.label :Location
+    = form.label :location
     %br/
     = form.text_field :location
   %p
-    = form.label :Description
+    = form.label :description
     %br/
     = form.text_area :description  
   %p
-    = form.label :Availability
+    = form.label :availability
     %br/
     = form.text_field :availability
   %p
-    = form.label :Email
+    = form.label :email
     %br/
     = form.email_field :email
   %p
-    = form.label :"Phone number"
+    = form.label :phone_number
     %br/
     = form.telephone_field :phone_number
   %p
