@@ -12,9 +12,7 @@ Feature: Visitor can view listing
 
   Scenario:
     When I visit the landing page
-    Then stop
     Then I should see "Zane"
-    
     And I should see "Gothenburg" within "Zane" section
     And I should see "I'm nice" within "Zane" section
     And I should see "zane@cat.com" within "Zane" section
