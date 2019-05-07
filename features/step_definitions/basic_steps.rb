@@ -1,3 +1,7 @@
+When("I visit the landing page") do
+  visit root_path
+end
+
 Given("I visit the Become a host page") do
   visit new_listing_path
 end
