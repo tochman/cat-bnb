@@ -20,3 +20,8 @@ Feature: Hosts can not edit each others listings
     Given "owner_a@random.com" is logged in
     And visits the edit page for "Leif needs to be taken care of"
     Then she should see "You are NOT allowed to edit this listing"
+
+  Scenario: Owner A can edit her own listing
+    Given "owner_a@random.com" is logged in
+    And visits the edit page for "Please take care of Fluffy"
+    Then she should not see "You are NOT allowed to edit this listing"

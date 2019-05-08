@@ -25,6 +25,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem 'webdrivers', '~> 3.0'
   gem 'coveralls', require: false
+  gem 'rb-readline'
 end
 
 group :development do
