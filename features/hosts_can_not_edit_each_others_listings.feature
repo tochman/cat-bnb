@@ -1,3 +1,4 @@
+@javascript
 Feature: Hosts can not edit each others listings
 
   As a Host
@@ -5,13 +6,17 @@ Feature: Hosts can not edit each others listings
   I don't want any other Hosts to be able to edit my listings
 
   Background:
-    Given these hosts exist:
-      | email             | name |
-      | host_a@random.com | A    |
-      | host_b@random.com | B    |
+    Given these cat owners exist:
+      | email              |
+      | owner_a@random.com |
+      | owner_b@random.com |
 
-    Given the following listigs exist:
-      | name               | host |
-      | I can take care... | A    |
+    Given the following listings exist:
+      | name                           | owner              |
+      | Please take care of Fluffy     | owner_a@random.com |
+      | Leif needs to be taken care of | owner_b@random.com |
 
-  Scenario: Host A can not edit Hosts B's listing
+  Scenario: Owner A can not edit Owner B's listing
+    Given "owner_a@random.com" is logged in
+    And visits the edit page for "Leif needs to be taken care of"
+    Then she should see "You are NOT allowed to edit this listing"

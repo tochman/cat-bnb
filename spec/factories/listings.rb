@@ -6,5 +6,6 @@ FactoryBot.define do
     email { "MyString" }
     phone_number { "MyString" }
     availability { "MyString" }
+    association :owner, factory: :user
   end
 end
