@@ -9,3 +9,7 @@ Then("I should see {string} within {string} section") do |content, section|
     expect(page).to have_content content
   end
 end
+
+Then("I should see {string} button") do |button|
+  expect(page).to have_button(button)
+end
