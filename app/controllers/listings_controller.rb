@@ -11,15 +11,16 @@ class ListingsController < ApplicationController
 
   def edit
     @listing = Listing.find(params[:id])
-    if user_can_edit(@listing)
-      redirect_to root_path, notice: 'You are NOT allowed to edit this listing'
-    end
+    authorize(@listing)
+    # if user_can_edit(@listing)
+    #   redirect_to root_path, notice: 'You are NOT allowed to edit this listing'
+    # end
   end
 
-  private
+  # private
 
-  def user_can_edit(resource)
-    current_user != resource.owner
-  end
+  # def user_can_edit(resource)
+  #   current_user != resource.owner
+  # end
 
 end
